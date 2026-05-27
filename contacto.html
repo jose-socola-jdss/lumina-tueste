@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Lúmina Tueste</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <nav class="main-nav scrolled" aria-label="Navegación principal">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">Lúmina Tueste</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner">
+    <div class="container">
+      <h1>Contacto</h1>
+      <p>¿Tienes dudas o quieres hacer un pedido especial? Escríbenos y te responderemos a la brevedad.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section Grid -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="contact-grid reveal-item">
+        <div class="contact-form-wrap">
+          <h2>Envíanos un Mensaje</h2>
+          <form id="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email" required placeholder="Ej. juan@correo.com">
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono (Opcional)</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Ej. +56 9 1234 5678">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required placeholder="¿En qué podemos ayudarte?"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+          </form>
+        </div>
+
+        <div class="contact-sidebar">
+          <h3>Información de Contacto</h3>
+          
+          <div class="contact-item">
+            <i data-lucide="mail" style="width: 24px; height: 24px;"></i>
+            <p>
+              <strong>Correo Electrónico</strong>
+              contacto@luminatueste.com
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <i data-lucide="phone" style="width: 24px; height: 24px;"></i>
+            <p>
+              <strong>Teléfono</strong>
+              +56 2 2345 6789
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <i data-lucide="map-pin" style="width: 24px; height: 24px;"></i>
+            <p>
+              <strong>Nuestra Tostaduría</strong>
+              Av. Italia 1420, Providencia, Santiago.
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <i data-lucide="clock" style="width: 24px; height: 24px;"></i>
+            <p>
+              <strong>Horario de Atención</strong>
+              Lunes a Viernes: 09:00 - 18:00 hrs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Lúmina Tueste</h3>
+        <p>Café de Especialidad</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

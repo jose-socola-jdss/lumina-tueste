@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lúmina Tueste — Café de Especialidad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <nav class="main-nav" aria-label="Navegación principal">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">Lúmina Tueste</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="reveal-item hero">
+    <div class="container hero-split">
+      <div class="hero-text">
+        <h1>Despierta tus sentidos con cada gota</h1>
+        <p>Seleccionamos los mejores granos de origen único, los tostamos con precisión artesanal y te los entregamos frescos a tu puerta. Cada taza cuenta una historia de terroir, dedicación y pasión por el café perfecto.</p>
+        <a href="servicios.html" class="btn-primary">Descubre Nuestro Café</a>
+      </div>
+      <div class="hero-visual">
+        <div class="coffee-circle" aria-hidden="true">☕</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Orígenes Section -->
+  <section class="reveal-item section" id="origenes">
+    <div class="container">
+      <h2 class="section-title">Nuestros Orígenes</h2>
+      <p class="section-subtitle">Viajamos por el mundo para encontrar los granos más excepcionales de cada cosecha.</p>
+      <div class="origenes-grid">
+        <article class="origin-card reveal-item">
+          <div class="origin-flag"><img src="https://flagcdn.com/w80/co.png" alt="Bandera de Colombia" class="flag-img"></div>
+          <h3>Colombia</h3>
+          <p class="flavor">Notas de caramelo, cítricos y panela</p>
+          <p class="altitude"><i data-lucide="mountain" style="width:14px;height:14px;display:inline;vertical-align:middle;"></i> 1,800 – 2,100 msnm</p>
+          <p style="margin-top:0.75rem;font-size:0.9rem;color:#8a7060;">De la región del Huila, nuestros granos colombianos se cultivan bajo sombra en fincas familiares con tradición de tres generaciones.</p>
+        </article>
+        <article class="origin-card reveal-item">
+          <div class="origin-flag"><img src="https://flagcdn.com/w80/et.png" alt="Bandera de Etiopía" class="flag-img"></div>
+          <h3>Etiopía</h3>
+          <p class="flavor">Notas florales, afrutado y miel silvestre</p>
+          <p class="altitude"><i data-lucide="mountain" style="width:14px;height:14px;display:inline;vertical-align:middle;"></i> 1,900 – 2,200 msnm</p>
+          <p style="margin-top:0.75rem;font-size:0.9rem;color:#8a7060;">Cuna del café arábica. Nuestro lote proviene de Yirgacheffe, procesado de forma natural para resaltar sus notas florales únicas.</p>
+        </article>
+        <article class="origin-card reveal-item">
+          <div class="origin-flag"><img src="https://flagcdn.com/w80/gt.png" alt="Bandera de Guatemala" class="flag-img"></div>
+          <h3>Guatemala</h3>
+          <p class="flavor">Notas de chocolate, nuez y especias</p>
+          <p class="altitude"><i data-lucide="mountain" style="width:14px;height:14px;display:inline;vertical-align:middle;"></i> 1,500 – 1,800 msnm</p>
+          <p style="margin-top:0.75rem;font-size:0.9rem;color:#8a7060;">Desde las faldas de Antigua, estos granos volcánicos aportan un cuerpo denso con un final achocolatado e intenso.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proceso Section (Timeline) -->
+  <section class="reveal-item section proceso-bg" id="proceso">
+    <div class="container">
+      <h2 class="section-title">Nuestro Proceso</h2>
+      <p class="section-subtitle">Del grano verde a tu taza, cada paso importa.</p>
+      <div class="timeline">
+        <div class="timeline-step reveal-item">
+          <div class="step-number">1</div>
+          <i data-lucide="search" style="width:28px;height:28px;"></i>
+          <h4>Selección</h4>
+          <p>Evaluamos y catamos cientos de lotes para elegir los granos con mejor perfil de sabor y trazabilidad.</p>
+        </div>
+        <div class="timeline-step reveal-item">
+          <div class="step-number">2</div>
+          <i data-lucide="flame" style="width:28px;height:28px;"></i>
+          <h4>Tueste</h4>
+          <p>Cada lote se tuesta en pequeñas cantidades con curvas personalizadas para resaltar su carácter único.</p>
+        </div>
+        <div class="timeline-step reveal-item">
+          <div class="step-number">3</div>
+          <i data-lucide="clock" style="width:28px;height:28px;"></i>
+          <h4>Reposo</h4>
+          <p>El café descansa entre 48 y 72 horas después del tueste para alcanzar su punto óptimo de desgasificación.</p>
+        </div>
+        <div class="timeline-step reveal-item">
+          <div class="step-number">4</div>
+          <i data-lucide="truck" style="width:28px;height:28px;"></i>
+          <h4>Envío</h4>
+          <p>Empacamos al vacío y enviamos a tu puerta en menos de 24 horas para garantizar frescura absoluta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios Section -->
+  <section class="reveal-item section" id="testimonios">
+    <div class="container">
+      <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+      <p class="section-subtitle">Historias reales de quienes ya despiertan con Lúmina.</p>
+      <div class="testimonios-grid">
+        <div class="testimonial-card reveal-item">
+          <span class="quote-mark" aria-hidden="true">"</span>
+          <blockquote>Desde que descubrí Lúmina, no puedo volver al café comercial. El aroma cuando abres la bolsa es embriagador, y cada taza tiene una complejidad que no sabía que existía. Es como viajar a cada origen con cada sorbo.</blockquote>
+          <p class="author">— María Fernanda López, Bogotá</p>
+        </div>
+        <div class="testimonial-card reveal-item">
+          <span class="quote-mark" aria-hidden="true">"</span>
+          <blockquote>Contraté la suscripción mensual para mi oficina y ha sido un antes y un después. Mis empleados están más motivados, las reuniones se volvieron más placenteras y la calidad es consistente cada mes. ¡Totalmente recomendado!</blockquote>
+          <p class="author">— Andrés Gutiérrez, Ciudad de México</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Lúmina Tueste</h3>
+        <p>Café de Especialidad</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

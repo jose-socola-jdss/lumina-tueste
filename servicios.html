@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios — Lúmina Tueste</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <nav class="main-nav scrolled" aria-label="Navegación principal">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">Lúmina Tueste</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner">
+    <div class="container">
+      <h1>Nuestros Servicios</h1>
+      <p>Desde suscripciones personalizadas hasta experiencias de cata, tenemos todo lo que necesitas para vivir el café de especialidad en su máxima expresión.</p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="services-grid">
+        <article class="service-card reveal-item">
+          <i data-lucide="calendar" style="width:48px;height:48px;"></i>
+          <h3>Suscripción Mensual</h3>
+          <p>Recibe cada mes una selección curada de los mejores granos de origen único, tostados frescos y empacados al vacío. Personaliza tu perfil de sabor, elige el tipo de molienda y la frecuencia de envío. Incluye tarjetas con notas de cata y consejos de preparación para cada lote. Cancela o pausa cuando quieras, sin permanencia.</p>
+          <a href="contacto.html" class="service-link">Conocer más <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </article>
+        <article class="service-card reveal-item">
+          <i data-lucide="coffee" style="width:48px;height:48px;"></i>
+          <h3>Catas Guiadas</h3>
+          <p>Vive la experiencia sensorial completa con nuestras sesiones de cata guiadas por Q-Graders certificados. Aprende a identificar notas de sabor, aromas y cuerpo. Ofrecemos sesiones privadas para grupos, eventos corporativos y talleres mensuales abiertos al público. Cada sesión incluye degustación de 4 a 6 orígenes diferentes.</p>
+          <a href="contacto.html" class="service-link">Conocer más <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </article>
+        <article class="service-card reveal-item">
+          <i data-lucide="briefcase" style="width:48px;height:48px;"></i>
+          <h3>Venta B2B</h3>
+          <p>Proveemos café de especialidad a restaurantes, hoteles, oficinas y cafeterías que buscan diferenciarse con un producto excepcional. Ofrecemos precios mayoristas, entregas programadas, capacitación para baristas y soporte técnico para equipos de preparación. Trabajamos con contratos flexibles adaptados a cada negocio.</p>
+          <a href="contacto.html" class="service-link">Conocer más <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional info section -->
+  <section class="reveal-item section proceso-bg">
+    <div class="container" style="text-align:center; max-width:700px;">
+      <h2 class="section-title">¿Por Qué Elegir Lúmina?</h2>
+      <p class="section-subtitle" style="margin-bottom:2rem;">Más que café, ofrecemos una experiencia completa que conecta al productor con tu taza.</p>
+      <p style="margin-bottom:1.5rem;">Trabajamos directamente con pequeños productores en América Latina y África, asegurando trazabilidad total y comercio justo. Cada bolsa que recibes tiene un código QR que te permite conocer la finca, el productor y las condiciones de cultivo de tu café.</p>
+      <p>Nuestro compromiso con la frescura significa que nunca tendrás un café tostado hace más de 7 días. Controlamos cada etapa del proceso para garantizar que cada taza sea extraordinaria.</p>
+    </div>
+  </section>
+
+  
+  <!-- Interactive Subscription Widget -->
+  <section class="reveal-item section subscription-customizer-section" style="background:#FDFBF7; border-top:1px solid #F4EBE1;">
+    <div class="container">
+      <h2 class="section-title">Personaliza tu Suscripción</h2>
+      <p class="section-subtitle" style="text-align:center; color:#8C7B79; margin-bottom:3rem;">Elige el perfil ideal para tu taza diaria y calcula tu tarifa al instante.</p>
+      
+      <div class="subscription-customizer-card">
+        <div class="customizer-options">
+          <div class="option-group">
+            <label>Frecuencia de Envío</label>
+            <div class="customizer-buttons" id="freq-buttons">
+              <button class="btn-custom active" data-value="15" data-text="Semanal">Semanal</button>
+              <button class="btn-custom" data-value="25" data-text="Quincenal">Quincenal</button>
+              <button class="btn-custom" data-value="40" data-text="Mensual">Mensual</button>
+            </div>
+          </div>
+          <div class="option-group">
+            <label>Cantidad de Café</label>
+            <div class="customizer-buttons" id="amount-buttons">
+              <button class="btn-custom active" data-value="1" data-text="250g">250g</button>
+              <button class="btn-custom" data-value="1.8" data-text="500g">500g</button>
+              <button class="btn-custom" data-value="3.2" data-text="1kg">1kg</button>
+            </div>
+          </div>
+        </div>
+        <div class="customizer-summary">
+          <h3>Resumen del Plan</h3>
+          <p id="summary-text" style="color:#6B5E5C; margin:1rem 0;">Envío Semanal de 250g de café de especialidad.</p>
+          <div class="price-wrap">
+            <span class="price-currency">$</span>
+            <span class="price-value" id="price-val">15.00</span>
+            <span class="price-period">/mes</span>
+          </div>
+          <button class="btn-primary" id="btn-subscribe-now" style="width: 100%; margin-top: 1.5rem; background:var(--primary); color:#fff; border:none; padding:0.8rem; border-radius:8px; font-weight:700; cursor:pointer;">Suscribirse Ahora</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Lúmina Tueste</h3>
+        <p>Café de Especialidad</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
